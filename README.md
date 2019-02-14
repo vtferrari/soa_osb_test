@@ -1,5 +1,12 @@
-# Teste back-end developer
+# Tecnologias
 
+Java 11
+Reactor 3
+Spring boot 2.1.2
+OpenFeign
+
+--- 
+# Teste back-end developer
 
 O teste é simples porém prático, pois você verá muito disso caso você venha a participar do nosso ambiente de trabalho.
 
