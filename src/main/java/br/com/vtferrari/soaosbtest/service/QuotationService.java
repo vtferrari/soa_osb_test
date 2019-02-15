@@ -44,5 +44,4 @@ public class QuotationService {
                 .map(hotels -> hotelIntegrationResponseAdapter.merge(hotels, quotation))
                 ;
     }
-
 }

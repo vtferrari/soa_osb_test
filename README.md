@@ -1,7 +1,7 @@
 # Tecnologias
 * Java 11
 * Reactor 3
-* Spring boot 2.1.2
+* Spring boot 2.1.3
 * OpenFeign
 
 # Teste 1

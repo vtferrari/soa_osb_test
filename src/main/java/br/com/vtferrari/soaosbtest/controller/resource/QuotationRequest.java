@@ -1,6 +1,7 @@
 package br.com.vtferrari.soaosbtest.controller.resource;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Builder;
 import lombok.Data;
 
 import javax.validation.constraints.Min;
@@ -10,6 +11,7 @@ import java.time.LocalDate;
 import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
 
 @Data
+@Builder
 @JsonInclude(NON_NULL)
 public class QuotationRequest {
     @NotNull

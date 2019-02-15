@@ -15,6 +15,5 @@ public class SoaOsbTestApplication {
     public static void main(String[] args) {
         SpringApplication.run(SoaOsbTestApplication.class, args);
     }
-
 }
 

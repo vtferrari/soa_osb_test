@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(value = "hotel", url = "https://cvcbackendhotel.herokuapp.com/hotels")
+@FeignClient(value = "hotel", url = "${api.hotels}")
 public interface HotelIntegration {
 
     @GetMapping("/avail/{cityCode}")

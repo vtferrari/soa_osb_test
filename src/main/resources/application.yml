@@ -1,1 +1,2 @@
-
+api:
+  hotels: https://cvcbackendhotel.herokuapp.com/hotels
