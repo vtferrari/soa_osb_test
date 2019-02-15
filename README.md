@@ -5,6 +5,33 @@ Reactor 3
 Spring boot 2.1.2
 OpenFeign
 
+
+# Teste 1
+```$sh
+curl -X GET \
+  http://localhost:8080/hotels/quotations \
+  -H 'Content-Type: application/json' \
+  -d '{
+	"cityCode": 1032,
+	"checkin": "2017-05-20",
+	"checkout": "2017-05-25",
+	"numberAdult": 2,
+	"numberChild": 1
+  }'
+```
+# Teste 2
+```$sh
+curl -X GET \
+  http://localhost:8080/hotels/10/quotations \
+  -H 'Content-Type: application/json' \
+  -d '{
+	"cityCode": 1032,
+	"checkin": "2017-05-20",
+	"checkout": "2017-05-25",
+	"numberAdult": 1,
+	"numberChild": 1
+  }'
+```
 --- 
 # Teste back-end developer
 

@@ -19,7 +19,7 @@ public class QuotationRequest {
     @NotNull
     private LocalDate checkout;
     @NotNull
-    @Min(1)
+    @Min(0)
     private Integer numberAdult;
     @NotNull
     @Min(0)
