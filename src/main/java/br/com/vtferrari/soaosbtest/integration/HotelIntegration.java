@@ -1,15 +1,19 @@
 package br.com.vtferrari.soaosbtest.integration;
 
 import br.com.vtferrari.soaosbtest.integration.resource.HotelIntegrationResponse;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(value = "hotel", url = "https://cvcbackendhotel.herokuapp.com/hotels/avail")
+@FeignClient(value = "hotel", url = "https://cvcbackendhotel.herokuapp.com/hotels")
 public interface HotelIntegration {
 
-    @GetMapping("/{cityCode}")
+    @GetMapping("/avail/{cityCode}")
     List<HotelIntegrationResponse> listHotelByCity(@PathVariable("cityCode") Long cityCode);
+
+    @GetMapping("/{hotelId}")
+    List<HotelIntegrationResponse> getHotelById(@PathVariable("hotelId") Long hotelId);
 }
