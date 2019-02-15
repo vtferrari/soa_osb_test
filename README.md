@@ -1,10 +1,8 @@
 # Tecnologias
-
-Java 11
-Reactor 3
-Spring boot 2.1.2
-OpenFeign
-
+* Java 11
+* Reactor 3
+* Spring boot 2.1.2
+* OpenFeign
 
 # Teste 1
 ```$sh

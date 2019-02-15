@@ -26,12 +26,12 @@ public class Room {
     }
 
     private BigDecimal getTotalStayPricePerAdult() {
-        final BigDecimal stay = BigDecimal.valueOf(getStayInDays());
+        final var stay = BigDecimal.valueOf(getStayInDays());
         return price.getAdult().multiply(stay).divide(TAX, RoundingMode.HALF_UP);
     }
 
     private BigDecimal getTotalStayPricePerChild() {
-        final BigDecimal stay = BigDecimal.valueOf(getStayInDays());
+        final var stay = BigDecimal.valueOf(getStayInDays());
         return price.getChild().multiply(stay).divide(TAX, RoundingMode.HALF_UP);
     }
 

@@ -36,7 +36,7 @@ public class QuotationService {
     public Mono<QuotationDetail> quote(final Long hotelId, final Quotation quotation) {
 
         final var hotelIntegrationResponses = hotelIntegration.getHotelById(hotelId);
-        log.info("Quote: "+hotelIntegrationResponses);
+        log.info("Quote: " + hotelIntegrationResponses);
         return Flux
                 .fromIterable(hotelIntegrationResponses)
                 .single()
