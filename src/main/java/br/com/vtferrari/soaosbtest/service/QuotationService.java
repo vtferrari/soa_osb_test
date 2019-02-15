@@ -23,6 +23,7 @@ public class QuotationService {
     public Flux<QuotationDetail> quote(final Quotation quotation) {
 
         final var hotelIntegrationResponses = hotelIntegration.listHotelByCity(quotation.getCityCode());
+        log.info("Quote: " + hotelIntegrationResponses);
         return Flux
                 .fromIterable(hotelIntegrationResponses)
                 .parallel()
@@ -32,7 +33,7 @@ public class QuotationService {
                 ;
     }
 
-    @Cacheable(value = "getHotelById", key = "hotelId")
+    @Cacheable(value = "getHotelById", key = "#hotelId")
     public Mono<QuotationDetail> quote(final Long hotelId, final Quotation quotation) {
 
         final var hotelIntegrationResponses = hotelIntegration.getHotelById(hotelId);
