@@ -4,6 +4,22 @@
 * Spring boot 2.1.3
 * OpenFeign
 
+# Executar o projeto
+
+com Docker 
+```bash
+$ docker build -t vtferrari/soa_osb_test .
+$ docker run -p 8080:8080 vtferrari/soa_osb_test
+```
+com java
+```bash
+$ java -jar ./target/soa-osb-test-0.0.1-SNAPSHOT.jar
+```
+ou 
+```bash
+$ mvn spring-boot:run
+```
+
 # Teste 1
 ```$sh
 curl -X GET \
